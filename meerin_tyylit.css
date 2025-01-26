@@ -1,3 +1,4 @@
+@media (min-width: 1600px){
 body {
     height: 100%;
   }
@@ -9,6 +10,69 @@ body {
     justify-content: space-between; /*Siirtää logon ja navbarin eri reunoille */
     position: relative; /*Pitää burgerin headerin siällä */
     align-items: center; /*Keskittää logon */
+    padding: 0 200px;
+  }
+  
+  header img {
+    max-height: 150px;
+    max-width: 150px;
+    margin-left: 30px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: #9E400B !important;
+  }
+  
+  
+  nav {
+    
+    background-color: none;
+    color: white;
+    display: flex;
+    align-self: flex-end; /*Siirtää navbarin alas */
+    right: 100px; /*Siirtää navbarin oikealle ja määrittää leveuden reunasta */
+  }
+  
+  nav ul {
+    display: flex; /* Varmistaa, että lista pysyy rivillä */
+  }
+  
+  nav ul li {
+    
+    display: inline-flex; /*Poistaa listasta täpät ja siirtää hampparissa listan vasemmalle  */
+    margin: 0.3em 1em; /*Takee välityksen navbarin linkeille */
+    
+  }
+  
+  nav input[type='checkbox'], nav label {
+    display: none; /*Poistaa checkboxin näkyvistä. Tää piti olla hampurilaismenua varten */
+  }
+  
+  section img {
+        max-width: calc(100% - 400px); /* Kokonaisleveydestä vähennetään 200px molemmilta puolilta */
+        display: block; /* Keskittää kuvan, jos marginia käytetään */
+        margin: 0 auto; /* Lisää automaattisen keskityksen */
+  }
+
+}
+@media (max-width: 1600px){
+body {
+    height: 100%;
+  }
+  
+  header {
+    background-color: #393939;
+    height: 200px;
+    display: flex;
+    justify-content: space-between; /*Siirtää logon ja navbarin eri reunoille */
+    position: relative; /*Pitää burgerin headerin siällä */
+    align-items: center; /*Keskittää logon */
+    padding: 0 20px;
     
   }
   
@@ -34,7 +98,7 @@ body {
     color: white;
     display: flex;
     align-self: flex-end; /*Siirtää navbarin alas */
-    right: 30px; /*Siirtää navbarin oikealle ja määrittää leveuden reunasta */
+    right: 100px; /*Siirtää navbarin oikealle ja määrittää leveuden reunasta */
   }
   
   
@@ -67,8 +131,8 @@ body {
     font-size: 1em; /*burgerin koko */
     cursor: pointer; /*Tekee kursorista erilaisen kun vie burgerin päälle */
   }
-  
-  @media (max-width: 770px) {
+}
+  @media (max-width: 800px) {
     
     header img {
         max-height: 100px;
@@ -84,7 +148,6 @@ body {
     nav {
         width: 50%;
         display: flex;
-        z-index: 10000; /*tän pitäis saada valikon avautumaan alas päin, mut ei toimi */
     }
     
     nav ul {
@@ -112,7 +175,7 @@ body {
         display: block;
         position: absolute;
         bottom: 10px;
-        right: 10px;
+        right: 20px;
     }
   
   
