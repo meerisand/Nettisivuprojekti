@@ -53,6 +53,12 @@ body {
     display: none; /*Poistaa checkboxin näkyvistä. Tää piti olla hampurilaismenua varten */
   }
   
+  section img {
+        max-width: calc(100% - 400px); /* Kokonaisleveydestä vähennetään 200px molemmilta puolilta */
+        display: block; /* Keskittää kuvan, jos marginia käytetään */
+        margin: 0 auto; /* Lisää automaattisen keskityksen */
+  }
+
 }
 @media (max-width: 1600px){
 body {
