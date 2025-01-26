@@ -1,6 +1,7 @@
 @media (min-width: 1600px){
 body {
     height: 100%;
+    background-color: #EDEAE3;
   }
   
   header {
@@ -57,6 +58,12 @@ body {
         max-width: calc(100% - 400px); /* Kokonaisleveydestä vähennetään 200px molemmilta puolilta */
         display: block; /* Keskittää kuvan, jos marginia käytetään */
         margin: 0 auto; /* Lisää automaattisen keskityksen */
+  }
+
+  .varaus {
+    border-radius: 8px; /* Pyöristetyt kulmat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjostukset */
+    transition: all 0.3s ease; /* Hover-efektin animaatio */
   }
 
 }
@@ -131,6 +138,12 @@ body {
     font-size: 1em; /*burgerin koko */
     cursor: pointer; /*Tekee kursorista erilaisen kun vie burgerin päälle */
   }
+
+  .varaus {
+    border-radius: 8px; /* Pyöristetyt kulmat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjostukset */
+    transition: all 0.3s ease; /* Hover-efektin animaatio */
+  }
 }
   @media (max-width: 800px) {
     
@@ -187,6 +200,12 @@ body {
         font-size: 3em; /*Vaikuttaa hampparin kokoon*/
         background-color: #393939;
     }
+
+    .varaus {
+        border-radius: 8px; /* Pyöristetyt kulmat */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjostukset */
+        transition: all 0.3s ease; /* Hover-efektin animaatio */
+      }
   }
   
   footer {
