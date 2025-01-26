@@ -1,35 +1,143 @@
 body {
     height: 100%;
-}
-
-header {
+  }
+  
+  header {
     background-color: #393939;
     height: 200px;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /*Siirtää logon ja navbarin eri reunoille */
+    position: relative; /*Pitää burgerin headerin siällä */
+    align-items: center; /*Keskittää logon */
     
-}
-
-header img {
+  }
+  
+  header img {
     max-height: 150px;
     max-width: 150px;
     margin-left: 30px;
-    
-}
-
-.nav-link:hover {
-    color: #9E400B !important;
-}
-
-footer {
-    background-color: #393939;
-    height: 250px;
-}
-
-footer .bi {
+  }
+  
+  a {
+    text-decoration: none;
     color: white;
-}
-
-footer .bi:hover {
+  }
+  
+  a:hover {
+    color: #9E400B !important;
+  }
+  
+  
+  nav {
+    
+    background-color: none;
+    color: white;
+    display: flex;
+    align-self: flex-end; /*Siirtää navbarin alas */
+    right: 30px; /*Siirtää navbarin oikealle ja määrittää leveuden reunasta */
+  }
+  
+  
+  
+  nav ul li {
+    
+    display: inline-flex; /*Poistaa listasta täpät ja siirtää hampparissa listan vasemmalle  */
+    margin: 0.3em 1em; /*Takee välityksen navbarin linkeille */
+    
+  }
+  
+  nav input[type='checkbox'], nav label {
+    display: none; /*Poistaa checkboxin näkyvistä. Tää piti olla hampurilaismenua varten */
+  }
+  
+  nav input[type='checkbox']:checked + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #393939;
+    border: 1px solid white;
+    border-radius: 5px;
+    z-index: 1000;
+    width: auto;
+  }
+  
+  .hamburger-menu {
+    font-size: 1em; /*burgerin koko */
+    cursor: pointer; /*Tekee kursorista erilaisen kun vie burgerin päälle */
+  }
+  
+  @media (max-width: 576px) {
+    
+    header img {
+        max-height: 100px;
+        max-width: 100px;
+        margin-left: 20px;
+    }
+  
+    header {
+        background-color: #393939;
+        height: 150px;
+    }
+    
+    nav {
+        width: 50%;
+        display: flex;
+        z-index: 10000; /*tän pitäis saada valikon avautumaan alas päin, mut ei toimi */
+    }
+    
+    nav ul {
+        position: relative;
+        z-index: 1001;
+    }
+   
+    nav ul li {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: right;
+        padding: 0.5em;
+    }
+    /*Vaikuttaa hampparin näkyvyyteen*/
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+  
+  
+    input[type='checkbox']:not(:checked)+ul {
+        display: none;
+    }
+  
+    .bi-list {
+        font-size: 3em; /*Vaikuttaa hampparin kokoon*/
+        background-color: #393939;
+    }
+  }
+  
+  footer {
+    background-color: #393939;
+    height: 300px;
+  }
+  
+  .footer-links a {
+    display: block; /* Asettaa linkit päällekkäin */
+    color: white;
+    text-decoration: none; /* Poistaa alleviivauksen */
+    margin-bottom: 15px;
+  }
+  
+  .footer-links a:hover {
+    color: #9E400B;
+  }
+  
+  footer .bi {
+    color: white;
+  }
+  
+  footer .bi:hover {
     color: #9E400B; 
     transition: color 0.3s ease;
-}
+  }
