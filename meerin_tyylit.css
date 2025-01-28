@@ -54,7 +54,7 @@ body {
     display: none; /*Poistaa checkboxin näkyvistä. Tää piti olla hampurilaismenua varten */
   }
   
-  section img {
+  .poytavarauskuva {
         max-width: calc(100% - 400px); /* Kokonaisleveydestä vähennetään 200px molemmilta puolilta */
         display: block; /* Keskittää kuvan, jos marginia käytetään */
         margin: 0 auto; /* Lisää automaattisen keskityksen */
@@ -64,6 +64,14 @@ body {
     border-radius: 8px; /* Pyöristetyt kulmat */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjostukset */
     transition: all 0.3s ease; /* Hover-efektin animaatio */
+  }
+
+  .yhtikonit a {
+    color: black;
+  }
+
+  .yhtikonit a:hover {
+    color: #9E400B !important;
   }
 
 }
@@ -145,6 +153,15 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjostukset */
     transition: all 0.3s ease; /* Hover-efektin animaatio */
   }
+
+  .yhtikonit a {
+    color: black;
+  }
+
+  .yhtikonit a:hover {
+    color: #9E400B !important;
+  }
+
 }
   @media (max-width: 800px) {
     
@@ -206,7 +223,16 @@ body {
         border-radius: 8px; /* Pyöristetyt kulmat */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjostukset */
         transition: all 0.3s ease; /* Hover-efektin animaatio */
-      }
+    }
+
+    .yhtikonit a {
+        color: black;
+        margin-bottom: 30px;
+    }
+    
+    .yhtikonit a:hover {
+        color: #9E400B !important;
+    }
   }
   
   footer {

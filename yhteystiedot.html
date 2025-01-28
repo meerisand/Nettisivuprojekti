@@ -34,26 +34,40 @@
         </nav>
     </header>
     <main>
-        <section style="display: flex; justify-content: center; align-items: center; padding: 2em; margin: 3em 0;">
-            <div style="max-width: 800px; background-color: white; padding: 2em; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); position: relative;">
-                <h1 style="margin-top: 0; text-align: center;">Pöytävaraukset</h1>
-                <hr style="border: 0; height: 1px; background-color: black; margin: 1em auto; width: 50%;">
-                <p style="line-height: 1.6; text-align: center;">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque exercitationem eligendi libero itaque inventore blanditiis iure facilis saepe voluptatem facere iste, illo alias, quia est quo! Soluta, quia. Labore, ea!
-                </p>
-                <p style="line-height: 1.6; text-align: center;">
-                    (Tähän tulee pöytävarauskalenteri tai joku vastaava toiminto)</p>
-                <div style="display: flex; justify-content: center; margin-top: 20px;">
-                    <button class="varaus" style="background-color: #9E400B; color: white; border: none; padding: 15px 30px; font-size: 1.2em; cursor: pointer; ">
-                        Varaa pöytä</button>
+        
+
+        <section class="d-flex justify-content-center align-items-center py-4 my-4 px-4">
+            <div class="container" style="max-width: 1000px;  padding: 6em; background-color: white; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);">
+
+                <div class="row align-items-center">
+                    <!-- Teksti vasemmalla -->
+                    <div class="col-md-6" style="line-height: 1.6; text-align: center;">
+                        <h2>Chef´s Place</h2>
+                        <hr style="border: 0; height: 1px; background-color: black; margin: 1em auto; width: 50%;">
+                        <p>Bulevardi 3</p>
+                        <p>00120 Helsinki</p>
+                        <p>040 1234567</p>
+                        <p>info@chefsplace.fi</p>
+                        <div class="yhtikonit d-flex justify-content-center">
+                            <a href="https://www.facebook.com" class="mx-3" target="_blank">
+                                <i class="bi bi-facebook" style="font-size: 2rem;"></i>  <!-- Facebook-ikoni -->
+                            </a>
+                            <a href="https://www.twitter.com" class="mx-3" target="_blank">
+                                <i class="bi bi-twitter" style="font-size: 2rem;"></i>  <!-- Twitter-ikoni -->
+                            </a>
+                            <a href="https://www.instagram.com" class="mx-3" target="_blank">
+                                <i class="bi bi-instagram" style="font-size: 2rem;"></i>  <!-- Instagram-ikoni -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Kuva oikealla -->
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.9307667019286!2d24.93852764007217!3d60.16532499101355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bcbd6897533%3A0xedfb9cfdaeb69c9a!2sBulevardi%2C%2000120%20Helsinki!5e0!3m2!1sfi!2sfi!4v1738079870500!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-            
         </section>
-    
-        <section>
-            <img src="Kuvat/ravintola.png" alt="Ravintola" style="width: 100%; height: auto;">
-        </section>
+        
     </main>
     
     <footer class="text-white d-flex flex-column align-items-center justify-content-center py-4">
