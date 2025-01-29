@@ -11,7 +11,7 @@ body {
     justify-content: space-between; /*Siirtää logon ja navbarin eri reunoille */
     position: relative; /*Pitää burgerin headerin siällä */
     align-items: center; /*Keskittää logon */
-    padding: 0 200px;
+    padding: 0 300px;
   }
   
   header img {
@@ -36,7 +36,7 @@ body {
     color: white;
     display: flex;
     align-self: flex-end; /*Siirtää navbarin alas */
-    right: 100px; /*Siirtää navbarin oikealle ja määrittää leveuden reunasta */
+    right: 0; /*Siirtää navbarin oikealle ja määrittää leveuden reunasta */
   }
   
   nav ul {
@@ -54,8 +54,8 @@ body {
     display: none; /*Poistaa checkboxin näkyvistä. Tää piti olla hampurilaismenua varten */
   }
   
-  section img {
-        max-width: calc(100% - 400px); /* Kokonaisleveydestä vähennetään 200px molemmilta puolilta */
+  .poytavarauskuva {
+        max-width: calc(100% - 600px); /* Kokonaisleveydestä vähennetään 200px molemmilta puolilta */
         display: block; /* Keskittää kuvan, jos marginia käytetään */
         margin: 0 auto; /* Lisää automaattisen keskityksen */
   }
@@ -64,6 +64,14 @@ body {
     border-radius: 8px; /* Pyöristetyt kulmat */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjostukset */
     transition: all 0.3s ease; /* Hover-efektin animaatio */
+  }
+
+  .yhtikonit a {
+    color: black;
+  }
+
+  .yhtikonit a:hover {
+    color: #9E400B !important;
   }
 
 }
@@ -145,6 +153,15 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjostukset */
     transition: all 0.3s ease; /* Hover-efektin animaatio */
   }
+
+  .yhtikonit a {
+    color: black;
+  }
+
+  .yhtikonit a:hover {
+    color: #9E400B !important;
+  }
+
 }
   @media (max-width: 800px) {
     
@@ -206,7 +223,16 @@ body {
         border-radius: 8px; /* Pyöristetyt kulmat */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjostukset */
         transition: all 0.3s ease; /* Hover-efektin animaatio */
-      }
+    }
+
+    .yhtikonit a {
+        color: black;
+        margin-bottom: 30px;
+    }
+    
+    .yhtikonit a:hover {
+        color: #9E400B !important;
+    }
   }
   
   footer {
