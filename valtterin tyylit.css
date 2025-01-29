@@ -87,7 +87,7 @@ section.content p {
 }
 
 section.content button {
-    background-color: #a0522d;
+    background-color: #9E400B;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -100,7 +100,7 @@ section.content button {
 }
 
 section.content button:hover {
-    background-color: #8b4513;
+    background-color: #9E400B;
     
 }
 
@@ -120,7 +120,7 @@ section.cta {
 }
 
 section.cta button {
-    background-color: #a0522d;
+    background-color: #9E400B;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -132,7 +132,7 @@ section.cta button {
 }
 
 section.cta button:hover {
-    background-color: #8b4513;
+    background-color: #9E400B;
     
 }
 
