@@ -149,5 +149,89 @@ section.restaurant-image img {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
-    
+}
+
+.text-on-image-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-on-image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1em;
+    width: 90%;
+    max-width: 800px;
+}
+
+.text-overlay h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-overlay p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .text-overlay {
+        top: 50%;
+        padding: 0.5em;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.8em;
+    }
+
+    .text-overlay p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        top: 50%;
+        width: 95%;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.5em;
+    }
+
+    .text-overlay p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 425px) {
+    .text-overlay {
+        top: 55%;
+        width: 95%;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.2em;
+        line-height: 1.1;
+    }
+
+    .text-overlay p {
+        font-size: 0.8em;
+        line-height: 1.1;
+    }
 }
