@@ -78,7 +78,33 @@ body {
     color: #9E400B !important;
   }
 
+  footer {
+    background-color: #393939;
+    height: 300px;
+  }
+  
+  .footer-links a {
+    display: block; /* Asettaa linkit päällekkäin */
+    color: white;
+    text-decoration: none; /* Poistaa alleviivauksen */
+    margin-bottom: 15px;
+  }
+  
+  .footer-links a:hover {
+    color: #9E400B;
+  }
+  
+  footer .bi {
+    color: white;
+  }
+  
+  footer .bi:hover {
+    color: #9E400B; 
+    transition: color 0.3s ease;
+  }
+
 }
+
 @media (max-width: 1600px){
 body {
     height: 100%;
@@ -123,8 +149,6 @@ body {
     right: 100px; /*Siirtää navbarin oikealle ja määrittää leveuden reunasta */
   }
   
-  
-  
   nav ul li {
     
     display: inline-flex; /*Poistaa listasta täpät ja siirtää hampparissa listan vasemmalle  */
@@ -168,7 +192,32 @@ body {
     color: #9E400B !important;
   }
 
+  footer {
+    background-color: #393939;
+    height: 300px;
+  }
+  
+  .footer-links a {
+    display: block; /* Asettaa linkit päällekkäin */
+    color: white;
+    text-decoration: none; /* Poistaa alleviivauksen */
+    margin-bottom: 15px;
+  }
+  
+  .footer-links a:hover {
+    color: #9E400B;
+  }
+  
+  footer .bi {
+    color: white;
+  }
+  
+  footer .bi:hover {
+    color: #9E400B; 
+    transition: color 0.3s ease;
+  }
 }
+
 @media (max-width: 800px) {
   
   body {
@@ -244,29 +293,30 @@ body {
     .yhtikonit a:hover {
         color: #9E400B !important;
     }
-  }
-  
-  footer {
-    background-color: #393939;
-    height: 300px;
-  }
-  
-  .footer-links a {
-    display: block; /* Asettaa linkit päällekkäin */
-    color: white;
-    text-decoration: none; /* Poistaa alleviivauksen */
-    margin-bottom: 15px;
-  }
-  
-  .footer-links a:hover {
-    color: #9E400B;
-  }
-  
-  footer .bi {
-    color: white;
-  }
-  
-  footer .bi:hover {
-    color: #9E400B; 
-    transition: color 0.3s ease;
-  }
+
+    footer {
+      background-color: #393939;
+      height: 150px;
+    }
+    
+    .footer-links a {
+      display: block; /* Asettaa linkit päällekkäin */
+      color: white;
+      text-decoration: none; /* Poistaa alleviivauksen */
+      margin-bottom: 15px;
+    }
+    
+    .footer-links a:hover {
+      color: #9E400B;
+    }
+    
+    footer .bi {
+      color: white;
+    }
+    
+    footer .bi:hover {
+      color: #9E400B; 
+      transition: color 0.3s ease;
+    }
+
+}
